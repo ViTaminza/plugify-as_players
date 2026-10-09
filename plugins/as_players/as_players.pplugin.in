@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${AS_PLAYERS_VERSION}",
+	"name": "as_players",
+	"description": "Admin player-action module for admin_system (port of the Pisex Metamod:Source module 'Players'): mm_kill, mm_kick, mm_slap, mm_rename, mm_changeteam, mm_switchteam, mm_noclip and mm_who, plus the 'players' admin-menu category with the eight matching items (who, noclip, switchteam, changeteam, rename, slap, kick, kill) and the player/team/damage picker menus. Matches the original commands, permissions, phrases and action parameters sent to the admin core. No exported methods.",
+	"author": "Pisex, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/as_players",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "admin_system",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
