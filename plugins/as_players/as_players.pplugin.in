@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
 	"version": "${AS_PLAYERS_VERSION}",
 	"name": "as_players",
-	"description": "Admin player-action module for admin_system (port of the Pisex Metamod:Source module 'Players'): mm_kill, mm_kick, mm_slap, mm_rename, mm_changeteam, mm_switchteam, mm_noclip and mm_who, plus the 'players' admin-menu category with the eight matching items (who, noclip, switchteam, changeteam, rename, slap, kick, kill) and the player/team/damage picker menus. Matches the original commands, permissions, phrases and action parameters sent to the admin core. No exported methods.",
+	"description": "Admin player-action module for admin_system (port of the Pisex Metamod:Source module 'Players'): mm_kill, mm_kick, mm_slap, mm_rename, mm_changeteam, mm_switchteam, mm_noclip and mm_who, plus the 'players' admin-menu category with the eight matching items (who, noclip, switchteam, changeteam, rename, slap, kick, kill) and the player/team/damage picker menus. Matches the original commands, permissions, phrases and action parameters sent to the admin core. Written directly against s2sdk: no pisexcompat and no shared wrapper library. The menus use the s2sdk menu manager; the player's own '!menu' type comes from the optional hudmenu plugin API, otherwise the Pisex default (the 'hud' type when its backend is registered, else 'button'). No exported methods.",
 	"author": "Pisex, ported to Plugify",
 	"website": "https://github.com/untrustedmodders/plugify",
 	"license": "GPL-3.0",
@@ -16,7 +16,7 @@
 		},
 		{
 			"name": "admin_system",
-			"constraints": ">=1.0.0"
+			"constraints": ">=1.1.0"
 		},
 		{
 			"name": "hudmenu",

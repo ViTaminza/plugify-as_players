@@ -9,9 +9,10 @@
            plugify module from the admin_system plugin's exported methods) */
         __admin_system_*;
 
-        /* hudmenu binding slots (defined by hudmenu_bindings, filled by the plugify module from
-           the hudmenu plugin's exported GetClientMenuType/SetClientMenuType) */
+        /* hudmenu binding slots (optional plugin API: the original's per-player menu type) */
         __hudmenu_*;
+
+        /* No exported methods: as_players exposes nothing to other plugins. */
 
     local: *;
 };
